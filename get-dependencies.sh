@@ -8,6 +8,7 @@ echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
     go     \
+    nsight-compute \
     python
 
 echo "Installing debloated packages..."
