@@ -14,7 +14,7 @@ export MAIN_BIN=photini
 export DEPLOY_PYTHON=1
 
 # Deploy dependencies
-quick-sharun /usr/nin/photini
+quick-sharun /usr/bin/photini
 
 # Additional changes can be done in between here
 
