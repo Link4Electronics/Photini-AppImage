@@ -8,8 +8,14 @@ echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
     go     \
+    libgexiv2 \
     nsight-compute \
-    python
+    python \
+    python-appdirs \
+    python-gobject \
+    python-gpxpy \
+    python-keyring \
+    python-sip
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
