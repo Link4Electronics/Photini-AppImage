@@ -19,7 +19,11 @@ get-debloated-pkgs --add-common --prefer-nano
 
 # If the application needs to be manually built that has to be done down here
 make-aur-package debtap
-wget http://ftp.us.debian.org/debian/pool/main/t/tcl9.0/libtcl9.0_9.0.3+dfsg-1_arm64.deb
-debtap libtcl9.0_9.0.x_amd64.deb
-pacman -U libtcl9.0-9.0.x-1-x86_64.pkg.tar.zst
+if [ "$ARCH" = "x86_64" ]; then
+    wget http://ftp.us.debian.org/debian/pool/main/t/tcl9.0/libtcl9.0_9.0.3+dfsg-1_amd64.deb
+    debtap libtcl9.0_9.0.3+dfsg-1_amd64.deb
+else
+    wget http://ftp.us.debian.org/debian/pool/main/t/tcl9.0/libtcl9.0_9.0.3+dfsg-1_arm64.deb
+    debtap libtcl9.0_9.0.3+dfsg-1_arm64.deb
+pacman -U libtcl9.0_9.0.3+dfsg-1-${ARCH}.pkg.tar.zst
 make-aur-package photini-git
