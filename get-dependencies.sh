@@ -18,10 +18,8 @@ get-debloated-pkgs --add-common --prefer-nano
 
 
 # If the application needs to be manually built that has to be done down here
-git clone https://gitlab.com/cznic/libtcl9.0.git
-cd libtcl9.0
-make
-ls
-#mv -v 
-
+make-aur-package debtap
+wget http://ftp.us.debian.org/debian/pool/main/t/tcl9.0/libtcl9.0_9.0.3+dfsg-1_arm64.deb
+debtap libtcl9.0_9.0.x_amd64.deb
+pacman -U libtcl9.0-9.0.x-1-x86_64.pkg.tar.zst
 make-aur-package photini-git
