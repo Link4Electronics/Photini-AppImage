@@ -14,8 +14,7 @@ pacman -Syu --noconfirm \
     python-appdirs \
     python-gobject \
     python-gpxpy \
-    python-keyring \
-    python-sip
+    python-keyring
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
@@ -25,6 +24,7 @@ get-debloated-pkgs --add-common --prefer-nano
 
 
 # If the application needs to be manually built that has to be done down here
+make-aur-package python-sip4
 make-aur-package debtap
 debtap -u
 if [ "$ARCH" = "x86_64" ]; then
