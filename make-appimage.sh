@@ -14,7 +14,7 @@ export MAIN_BIN=photini
 export DEPLOY_PYTHON=1
 
 # Deploy dependencies
-quick-sharun /usr/bin/photini /usr/bin/exiftool
+quick-sharun /usr/bin/photini /usr/bin/exiftoolgui
 
 # Additional changes can be done in between here
 
