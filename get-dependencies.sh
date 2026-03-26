@@ -21,6 +21,7 @@ get-debloated-pkgs --add-common --prefer-nano
 git clone https://gitlab.com/cznic/libtcl9.0.git
 cd libtcl9.0
 make
-mv -v 
+ls
+#mv -v 
 
 make-aur-package photini-git
