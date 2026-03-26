@@ -35,4 +35,4 @@ else
     debtap libtcl9.0_9.0.3+dfsg-1_arm64.deb
 fi
 pacman -Udd --noconfirm libtcl9.0-9.0.3-1-${ARCH}.pkg.tar.zst
-make-aur-package photini-git
+PRE_BUILD_CMDS="sed -i 's/\bpython-sip\b/sip/g' ./PKGBUILD" make-aur-package photini-git
