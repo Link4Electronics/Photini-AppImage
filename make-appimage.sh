@@ -10,9 +10,10 @@ export ADD_HOOKS="self-updater.bg.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
 export ICON=https://raw.githubusercontent.com/jim-easterbrook/Photini/refs/heads/main/src/doc/images/photini_logo.png
 export DESKTOP=DUMMY
+export MAIN_BIN=photini
 
 # Deploy dependencies
-quick-sharun /PATH/TO/BINARY_AND_LIBRARIES_HERE
+quick-sharun /usr/nin/photini
 
 # Additional changes can be done in between here
 
