@@ -19,6 +19,7 @@ get-debloated-pkgs --add-common --prefer-nano
 
 # If the application needs to be manually built that has to be done down here
 make-aur-package debtap
+debtap -u
 if [ "$ARCH" = "x86_64" ]; then
     wget http://ftp.us.debian.org/debian/pool/main/t/tcl9.0/libtcl9.0_9.0.3+dfsg-1_amd64.deb
     debtap libtcl9.0_9.0.3+dfsg-1_amd64.deb
