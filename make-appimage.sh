@@ -11,6 +11,7 @@ export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}
 export ICON=https://raw.githubusercontent.com/jim-easterbrook/Photini/refs/heads/main/src/doc/images/photini_logo.png
 export DESKTOP=DUMMY
 export MAIN_BIN=photini
+export DEPLOY_PYTHON=1
 
 # Deploy dependencies
 quick-sharun /usr/nin/photini
